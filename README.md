@@ -1,20 +1,23 @@
 # Art Auction Valuation
 
 ## Motivation
-Last November, Leonardo da Vincis painting "Saviour of the World," sold at Christie's in New York for $450.3 million, shattering the world record for any work of art sold at auction. As an artist myself, I have been curious about how the commercialized art auction market evaluates art pieces, so I turned my passion and curiosity for art into this data science project. The goal of the project is to predict if an art piece by 7 famous artists will be sold for more than $20,000, and if an art piece from less known artists will be sold for more than $2,000.
+Last November, Leonardo da Vincis painting "Saviour of the World," sold at Christie's in New York for $450.3 million, shattering the world record for any work of art sold at auction. As an artist myself, I have been curious about how the commercialized art auction market evaluates art pieces, so I turned my passion and curiosity for art into this data science project. The goal of the project is to predict if an artwork by 7 famous artists will be sold for more than $20,000, and if an artwork from less known artists will be sold for more than $2,000.
 
 ## Data Description
 Web scraped art auction data. The dataset consists of 37,638 art pieces sold at a total valuation of $9.47 billion. Sold prices include a maximum of $119.92 million and a minimum of $3. Since the sold price gap between famous artists and small artists is very wide, I divided dataset into two subsets: 7 famous artists and 7399 less known artists. I built machine learning models and used different combinations of features for each subset. For this demonstration, I will primarily focus on the 7 famous artists model.
 
-## Features
+Missing Data Heat Map:
+![](https://github.com/jasonshi10/art_auction_valuation/blob/master/images/miss_data.png)
+50% of sold time data is missing.
 
+## Features
 
 | Feature Name  | Description  | Example  |
 | ------------ | ------------ | ------------ |
-| Artist  | Artists' names  | Pablo Picasso  |
-|  Country |  Artists' country of origin |  Spain |
-| Year of Birth  | Artists' brith year  | 1891  |
-| Year of Death  | Artists' death year  | 1903  |
+| Artist  | Artist's names  | Pablo Picasso  |
+|  Country |  Artist's country of origin |  Spain |
+| Year of Birth  | Artist's brith year  | 1891  |
+| Year of Death  | Artist's death year  | 1903  |
 | Name | Name of the artwork  | 'Untitled'  |
 | Material  | Material used for an artwork  |  Oil on canvas |
 | Height  | Height of an artwork in inches | 24  |
@@ -34,3 +37,23 @@ Web scraped art auction data. The dataset consists of 37,638 art pieces sold at 
 
 ## Feature Extraction
 Use OpenCV and Python Image Library (PIL) to extract features like dominant color, mean brightness, face count, etc.
+
+## Models Used
+- Logistic regression
+- Random Forest
+- Gradient Boosting
+- Adaptive Boosting
+- Voting Classifier
+
+## Best Model
+![](https://github.com/jasonshi10/art_auction_valuation/blob/master/images/model_comparison.png)
+Gradient Boosting and ensemble perfom very similarlly.
+
+## Other Findings
+- General sentiment towards certain art styles change over time, which may influence auction prices.
+- Artists who had successful exhibitions prior to an auction tend to sell for higher prices.
+- Collectors may buy artworks to avoid taxes, providing an incentive to pay more.
+- During auctions, competition between bidders raises final selling prices.
+- Art value is about more than aesthetics, intangible factors such as conceptual value often play a role in a work’s value. Also the rarity of a work.
+
+## Reference
