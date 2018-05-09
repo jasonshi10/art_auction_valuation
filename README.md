@@ -14,7 +14,7 @@ An overview of features and missing data through a heat map:
 
 | Feature Name  | Description  | Example  |
 | ------------ | ------------ | ------------ |
-| Artist  | Artist's names  | Pablo Picasso  |
+| Artist  | Artist's name  | Pablo Picasso  |
 |  Country |  Artist's country of origin |  Spain |
 | Year of Birth  | Artist's brith year  | 1891  |
 | Year of Death  | Artist's death year  | 1903  |
