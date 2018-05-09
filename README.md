@@ -49,6 +49,15 @@ Use OpenCV and Python Image Library (PIL) to quantify aesthetics and extract fea
 ![](https://github.com/jasonshi10/art_auction_valuation/blob/master/images/model_comparison.png)
 Gradient Boosting performs the best with approximately 80% accuracy.
 
+## Key Features
+Partial dependence from Gradient Boosting indicates key features that contribute to the prediction:
+![](https://github.com/jasonshi10/art_auction_valuation/blob/master/images/height.png)
+![](https://github.com/jasonshi10/art_auction_valuation/blob/master/images/unique.png)
+![](https://github.com/jasonshi10/art_auction_valuation/blob/master/images/corner.png)
+
+- The height of an artwork and unique color ratio are positively correlated with the price sold.
+- Corner percentage is negatively correlated with the price sold.
+
 ## Other Findings
 - General sentiment towards certain art styles change over time, which may influence auction prices.
 - Artists who had successful exhibitions prior to an auction tend to sell for higher prices.
