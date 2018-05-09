@@ -36,7 +36,7 @@ An overview of features and missing data through a heat map:
 |Sold Time   | When the auction sales happened  | 2007-05-03  |
 
 ## Feature Extraction
-Use OpenCV and Python Image Library (PIL) to extract features like dominant color, mean brightness, face count, etc.
+Use OpenCV and Python Image Library (PIL) to quantify aesthetics and extract features like dominant color, mean brightness, face count, etc.
 
 ## Model Used
 - Logistic regression
