@@ -47,7 +47,7 @@ Use OpenCV and Python Image Library (PIL) to quantify aesthetics and extract fea
 - Voting Classifier
 
 ## Model Comparison and Results
-<img src='https://github.com/jasonshi10/art_auction_valuation/blob/master/images/models.png'width="620" height="320">
+<img src='https://github.com/jasonshi10/art_auction_valuation/blob/master/images/models.png' width="620" height="320">
 Gradient Boosting performs the best with approximately 80% accuracy.
 
 ## Key Features
