@@ -48,7 +48,7 @@ Use OpenCV and Python Image Library (PIL) to quantify aesthetics and extract fea
 
 ## Model Comparison and Results
 <img src='https://github.com/jasonshi10/art_auction_valuation/blob/master/images/models.png' width="620" height="340">
-Gradient Boosting performs the best with approximately 80% accuracy.
+Ensemble of three tree models performs the best with 80% accuracy.
 
 ## Key Features
 Partial dependence from Gradient Boosting indicates key features that contribute to the prediction:
