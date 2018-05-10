@@ -7,7 +7,7 @@ Last November, Leonardo da Vinci's painting "Saviour of the World," sold at Chri
 Web scraped art auction data. The dataset consists of 37,638 art pieces sold at a total valuation of $9.47 billion. Sold prices include a maximum of $119.92 million and a minimum of $3. Since the sold price gap between famous artists and small artists is very wide, I divided dataset into two subsets: 7 famous artists and 7399 less known artists. I built machine learning models and used different combinations of features for each subset. For this demonstration, I will primarily focus on the 7 famous artists model.
 
 An overview of features and missing data through a heat map:
-![](https://github.com/jasonshi10/art_auction_valuation/blob/master/images/miss_data.png)
+<img src='https://github.com/jasonshi10/art_auction_valuation/blob/master/images/miss_data.png' width="1000" height="600">
 50% of sold time data is missing.
 
 ## Features
@@ -51,9 +51,9 @@ Gradient Boosting performs the best with approximately 80% accuracy.
 
 ## Key Features
 Partial dependence from Gradient Boosting indicates key features that contribute to the prediction:
-<img src='https://github.com/jasonshi10/art_auction_valuation/blob/master/images/height.png' width="250" height="200">
-<img src='https://github.com/jasonshi10/art_auction_valuation/blob/master/images/unique.png' width="250" height="200">
-<img src="https://github.com/jasonshi10/art_auction_valuation/blob/master/images/corner.png" width="250" height="200">
+<img src='https://github.com/jasonshi10/art_auction_valuation/blob/master/images/height.png' width="300" height="250">
+<img src='https://github.com/jasonshi10/art_auction_valuation/blob/master/images/unique.png' width="300" height="250">
+<img src="https://github.com/jasonshi10/art_auction_valuation/blob/master/images/corner.png" width="300" height="250">
 
 - The height of an artwork and unique color ratio are positively correlated with the price sold.
 - Corner percentage is negatively correlated with the price sold.
@@ -75,5 +75,3 @@ Partial dependence from Gradient Boosting indicates key features that contribute
 - AWS EC2
 - OpenCV
 - Plotly
-
-## Reference
