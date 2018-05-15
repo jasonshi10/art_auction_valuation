@@ -1,7 +1,7 @@
 # Art Auction Valuation
 
 ## Motivation
-Last November, Leonardo da Vinci's painting "Saviour of the World," sold at Christie's in New York for $450.3 million, shattering the world record for any work of art sold at auction. As an artist myself, I have been curious about how the commercialized art auction market evaluates art pieces, so I turned my passion and curiosity for art into this data science project. The goal of the project is to predict if an artwork by 7 famous artists will be sold for more than $20,000, and if an artwork from less known artists will be sold for more than $2,000.
+Last November, Leonardo da Vinci's painting "Saviour of the World," sold at Christie's in New York for $450.3 million, shattering the world record for any work of art sold at auction. As an artist myself, I have been curious about how the commercial art auction market evaluates art pieces, so I turned my curiosity and passion for art into this data science project. The goal of the project is to classify if an artwork by 7 famous artists will be sold for more than $20,000, and if an artwork from less known artists will be sold for more than $2,000.
 
 ## Data Description
 Web scraped art auction data. The dataset consists of 37,638 art pieces sold at a total valuation of $9.47 billion. Sold prices include a maximum of $119.92 million and a minimum of $3. Since the sold price gap between famous artists and small artists is very wide, I divided dataset into two subsets: 7 famous artists and 7399 less known artists. I built machine learning models and used different combinations of features for each subset. For this demonstration, I will primarily focus on the 7 famous artists model.
@@ -77,3 +77,7 @@ I was wondering why my model only achieved 80% of accuracy and did some detectiv
 - AWS EC2
 - OpenCV
 - Plotly
+
+## Reference
+
+Dataset is provided by github.com/ahmedhosny/theGreenCanvas
